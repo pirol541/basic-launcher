@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.sduduzog.slimlauncher.ui.main.HomeFragment"
+        android:label="home_fragment"
+        tools:layout="@layout/home_fragment">
+        <action
+            android:id="@+id/action_homeFragment_to_customiseAppsFragment"
+            app:destination="@id/customiseAppsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/customiseAppsFragment"
+        android:name="com.sduduzog.slimlauncher.ui.options.CustomiseAppsFragment"
+        android:label="customise_apps_fragment"
+        tools:layout="@layout/customise_apps_fragment">
+        <action
+            android:id="@+id/action_customiseAppsFragment_to_addAppFragment"
+            app:destination="@id/addAppFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addAppFragment"
+        android:name="com.sduduzog.slimlauncher.ui.options.AddAppFragment"
+        android:label="add_app_fragment"
+        tools:layout="@layout/add_app_fragment" />
+
+</navigation>
