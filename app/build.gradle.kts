@@ -8,11 +8,11 @@ plugins {
 android {
     compileSdkVersion(29)
     defaultConfig {
-        applicationId = "com.pirol541.xlimlauncher"
+        applicationId = "com.pirol541.basiclauncher"
         minSdkVersion(21)
         targetSdkVersion(29)
         versionCode = 1
-        versionName = "1.0.0"
+        versionName = "0.9.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables{useSupportLibrary = true}
 
