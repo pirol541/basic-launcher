@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity(),
     override fun onResume() {
         super.onResume()
         overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-        toggleStatusBar()
+        //toggleStatusBar()
     }
 
     override fun onStart() {
@@ -83,7 +83,7 @@ class MainActivity : AppCompatActivity(),
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
-        if (hasFocus) toggleStatusBar()
+        //if (hasFocus) toggleStatusBar()
     }
 
 
@@ -91,9 +91,9 @@ class MainActivity : AppCompatActivity(),
         if (s.equals(getString(R.string.prefs_settings_key_theme), true)) {
             recreate()
         }
-        if (s.equals(getString(R.string.prefs_settings_key_toggle_status_bar), true)) {
-            toggleStatusBar()
-        }
+        //if (s.equals(getString(R.string.prefs_settings_key_toggle_status_bar), true)) {
+        //    toggleStatusBar()
+        //}
     }
 
     //override fun getTheme(): Resources.Theme {
@@ -122,14 +122,14 @@ class MainActivity : AppCompatActivity(),
                 or View.SYSTEM_UI_FLAG_FULLSCREEN)
     }
 
-    private fun toggleStatusBar() {
-        val showBar = settings.getBoolean(getString(R.string.prefs_settings_key_toggle_status_bar), true)
-        if (showBar) {
-            showSystemUI()
-        } else {
-            hideSystemUI()
-        }
-    }
+    //private fun toggleStatusBar() {
+    //    val showBar = settings.getBoolean(getString(R.string.prefs_settings_key_toggle_status_bar), true)
+    //    if (showBar) {
+    //        showSystemUI()
+    //    } else {
+    //        hideSystemUI()
+    //    }
+    //}
 
     //companion object {
     //    fun resolveTheme(i: Int): Int {
